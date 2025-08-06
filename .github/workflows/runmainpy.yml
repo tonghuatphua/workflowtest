@@ -8,7 +8,7 @@ on:
   push:
     branches: [ "master" ]
     tags:
-      - '*'
+      - 'v*'
   pull_request:
     branches: [ "master" ]
   
@@ -57,8 +57,8 @@ jobs:
       - name: Create GitHub Release
         uses: ncipollo/release-action@v1
         with:
-          tag: ${{ github.ref_hub }}
-          name: Release ${{ github.ref_hub }}, Run ${{ github.run_number }}
+          tag: ${{ github.ref_name }}
+          name: Release ${{ github.ref_name }}, Run ${{ github.run_number }}
           body: |
             run id: ${{ github.run_id }}
             run number: ${{ github.run_number }}
