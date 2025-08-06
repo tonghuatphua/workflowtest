@@ -48,7 +48,4 @@ jobs:
             echo "main.py file does not exist."
           fi
           
-      # Runs a set of commands using the runners shell
-      - name: Run main.py
-        run: |
-         python main.py
+    
