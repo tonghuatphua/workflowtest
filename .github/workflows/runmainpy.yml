@@ -56,10 +56,10 @@ jobs:
         with:
           fetch-depth: 0  # Needed to fetch all tags
 
-      - name: Configure Git
-        run: |
-          git config user.name "github-actions"
-          git config user.email "github-actions@github.com"
+      #- name: Configure Git
+      #  run: |
+       #   git config user.name "github-actions"
+       #   git config user.email "github-actions@github.com"
 
       - name: Get latest tag and bump
         id: tagger
