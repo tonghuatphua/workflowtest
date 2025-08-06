@@ -1,7 +1,7 @@
 import unittest
 from main import subtract
 
-class TestAdd(unittest.TestCase):
+class TestSubtract(unittest.TestCase):
 
    def test_subtract(self):
        self.assertEqual(subtract(2, 1), 1)
