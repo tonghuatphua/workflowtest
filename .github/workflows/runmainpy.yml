@@ -51,6 +51,10 @@ jobs:
         run: |
           python main.py 
 
+      - name: Run test.py
+        run: |
+          python test.py 
+
       - name: Checkout code
         uses: actions/checkout@v4
 
